@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T11:11:58 IST" name="Default suite" finished-at="2026-02-11T11:12:07 IST" duration-ms="9023">
+  <suite started-at="2026-02-16T18:12:08 IST" name="Default suite" finished-at="2026-02-16T18:13:45 IST" duration-ms="96900">
     <groups>
     </groups>
-    <test started-at="2026-02-11T11:11:58 IST" name="Default test" finished-at="2026-02-11T11:12:07 IST" duration-ms="9023">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="baseSetUp()[pri:0, instance:tests.LoginTest@7586beff]" started-at="2026-02-11T11:11:58 IST" name="baseSetUp" finished-at="2026-02-11T11:12:03 IST" duration-ms="5213" status="PASS">
+    <test started-at="2026-02-16T18:12:08 IST" name="Default test" finished-at="2026-02-16T18:13:45 IST" duration-ms="96900">
+      <class name="tests.MainCategoryFilterValidationTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:08 IST" name="setUpClass" finished-at="2026-02-16T18:12:12 IST" duration-ms="3654" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseSetUp -->
-        <test-method signature="testLogin()[pri:0, instance:tests.LoginTest@7586beff]" started-at="2026-02-11T11:12:03 IST" name="testLogin" finished-at="2026-02-11T11:12:03 IST" duration-ms="16" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="cleanState()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:12 IST" name="cleanState" finished-at="2026-02-16T18:12:25 IST" duration-ms="13438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanState -->
+        <test-method signature="tc_PA_TC001_ValidFilter()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:25 IST" name="tc_PA_TC001_ValidFilter" finished-at="2026-02-16T18:12:29 IST" duration-ms="3371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_PA_TC001_ValidFilter -->
+        <test-method is-config="true" signature="cleanState()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:29 IST" name="cleanState" finished-at="2026-02-16T18:12:42 IST" duration-ms="12852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanState -->
+        <test-method signature="tc_PA_TC002_ClearSelection_ShowsAllCategories()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:42 IST" name="tc_PA_TC002_ClearSelection_ShowsAllCategories" finished-at="2026-02-16T18:12:44 IST" duration-ms="2485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_PA_TC002_ClearSelection_ShowsAllCategories -->
+        <test-method is-config="true" signature="cleanState()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:44 IST" name="cleanState" finished-at="2026-02-16T18:12:57 IST" duration-ms="12952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanState -->
+        <test-method signature="tc_PA_TC004_Pagination_ResetsToFirstPage()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:12:57 IST" name="tc_PA_TC004_Pagination_ResetsToFirstPage" finished-at="2026-02-16T18:13:40 IST" duration-ms="43400" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+              <![CDATA[Pagination did not reset to page 1 (no span '1'). expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
-at tests.LoginTest.testLogin(LoginTest.java:29)
+              <![CDATA[java.lang.AssertionError: Pagination did not reset to page 1 (no span '1'). expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.MainCategoryFilterValidationTest.tc_PA_TC004_Pagination_ResetsToFirstPage(MainCategoryFilterValidationTest.java:158)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -47,15 +70,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="baseTearDown()[pri:0, instance:tests.LoginTest@7586beff]" started-at="2026-02-11T11:12:03 IST" name="baseTearDown" finished-at="2026-02-11T11:12:07 IST" duration-ms="3727" status="PASS">
+        </test-method> <!-- tc_PA_TC004_Pagination_ResetsToFirstPage -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.MainCategoryFilterValidationTest@fbd1f6]" started-at="2026-02-16T18:13:40 IST" name="tearDownClass" finished-at="2026-02-16T18:13:45 IST" duration-ms="4678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseTearDown -->
-      </class> <!-- tests.LoginTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.MainCategoryFilterValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

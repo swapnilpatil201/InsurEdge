@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="02-CreatePolicy(failed)">
+    <classes>
+      <class name="tests.CreatePolicyTests">
+        <methods>
+          <include name="test_Reset_Returns_Defaults"/>
+          <include name="test_Premium_Label_And_NumericInput"/>
+          <include name="cleanState"/>
+          <include name="test_Premium_MinMaxConstraints"/>
+          <include name="test_ReviewDialog_DisplaysSelectedValues"/>
+          <include name="test_Premium_NumericOnlyAcceptance"/>
+          <include name="test_Premium_InvalidOrEmpty_ShowsError"/>
+          <include name="test_MainCategory_SingleSelection_And_Update"/>
+          <include name="test_Confirm_OK_ProceedsToSave"/>
+          <include name="tearDownClass"/>
+          <include name="test_MainCategory_Options_Listed"/>
+          <include name="test_Premium_Placeholder"/>
+          <include name="setUpClass"/>
+          <include name="test_Success_And_NoDuplicateOnSingleConfirm"/>
+        </methods>
+      </class> <!-- tests.CreatePolicyTests -->
+    </classes>
+  </test> <!-- 02-CreatePolicy(failed) -->
+  <test thread-count="5" name="03-MainCategory(failed)">
+    <classes>
+      <class name="tests.MainCategoryFilterValidationTest">
+        <methods>
+          <include name="validateMainCategoryFilter"/>
+          <include name="validatePaginationResetsToFirstPageAfterReset"/>
+          <include name="tearDownClass"/>
+          <include name="cleanState"/>
+          <include name="validateClearSelectionShowsAllCategories"/>
+          <include name="setUpClass"/>
+          <include name="validateResetClearsAllFiltersAndReloadsAllPolicies"/>
+        </methods>
+      </class> <!-- tests.MainCategoryFilterValidationTest -->
+    </classes>
+  </test> <!-- 03-MainCategory(failed) -->
+</suite> <!-- Failed suite [Suite] -->

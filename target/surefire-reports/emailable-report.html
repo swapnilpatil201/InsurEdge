@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">43,405</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">tests.CreatePolicyTests</td><td><a href="#m0">test_MainCategory_Options_Listed</a></td><td rowspan="1">1771301598254</td><td rowspan="1">416</td></tr><tr class="failedeven"><td><a href="#m1">test_Premium_InvalidOrEmpty_ShowsError</a></td><td rowspan="1">1771301600042</td><td rowspan="1">5390</td></tr><tr class="failedeven"><td><a href="#m2">test_Premium_MinMaxConstraints</a></td><td rowspan="1">1771301606187</td><td rowspan="1">1810</td></tr><tr class="failedeven"><td><a href="#m3">test_Success_And_NoDuplicateOnSingleConfirm</a></td><td rowspan="1">1771301615483</td><td rowspan="1">13217</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">tests.CreatePolicyTests</td><td><a href="#m4">test_Confirm_OK_ProceedsToSave</a></td><td rowspan="1">1771301594124</td><td rowspan="1">3763</td></tr><tr class="passedeven"><td><a href="#m5">test_MainCategory_SingleSelection_And_Update</a></td><td rowspan="1">1771301599003</td><td rowspan="1">780</td></tr><tr class="passedeven"><td><a href="#m6">test_Premium_Label_And_NumericInput</a></td><td rowspan="1">1771301605902</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m7">test_Premium_NumericOnlyAcceptance</a></td><td rowspan="1">1771301608358</td><td rowspan="1">211</td></tr><tr class="passedeven"><td><a href="#m8">test_Premium_Placeholder</a></td><td rowspan="1">1771301608857</td><td rowspan="1">45</td></tr><tr class="passedeven"><td><a href="#m9">test_Reset_Returns_Defaults</a></td><td rowspan="1">1771301609216</td><td rowspan="1">2803</td></tr><tr class="passedeven"><td><a href="#m10">test_ReviewDialog_DisplaysSelectedValues</a></td><td rowspan="1">1771301612271</td><td rowspan="1">2875</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.CreatePolicyTests#test_MainCategory_Options_Listed</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Main Category options mismatch.
+Expected at least: [-- Select Main Category --, Personal Accident Insurance, Phone Insurance, Travel Insurance, Life, Cyber Insurance, House Insurance, Asset]
+Actual: [-- Select Main Category --, Edited_1771298801083, Phone Insurance, Travel Insurance, Life, Cyber Insurance, House Insurance, Asset, Travel Insurance 1771244353765, Travel 1771244525297, AutoTest_1771246037388, Duplicate_1771246038925, Pet Insurance 1771246166018, AutoTest_1771246169886, Duplicate_1771246171283, Auto1771246325037, Pet Insurance 1771246366576, Duplicate_1771246382935, Auto, Pet Insurance 1771246535403, Duplicate_1771246551828, General Motor, Pet Insurance 1771298785322, Duplicate_1771298802564, AutoMain-1771299462240] expected [true] but found [false]
+	at tests.CreatePolicyTests.test_MainCategory_Options_Listed(CreatePolicyTests.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.CreatePolicyTests#test_Premium_InvalidOrEmpty_ShowsError</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected an invalid/empty premium message either in alert or page DOM. expected [true] but found [false]
+	at tests.CreatePolicyTests.test_Premium_InvalidOrEmpty_ShowsError(CreatePolicyTests.java:362)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.CreatePolicyTests#test_Premium_MinMaxConstraints</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Unexpected alert for min premium: ✅ Policy Created Successfully! expected [true] but found [false]
+	at tests.CreatePolicyTests.test_Premium_MinMaxConstraints(CreatePolicyTests.java:287)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.CreatePolicyTests#test_Success_And_NoDuplicateOnSingleConfirm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: No visible success locator found in UI. expected [true] but found [false]
+	at tests.CreatePolicyTests.test_Success_And_NoDuplicateOnSingleConfirm(CreatePolicyTests.java:176)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.CreatePolicyTests#test_Confirm_OK_ProceedsToSave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.CreatePolicyTests#test_MainCategory_SingleSelection_And_Update</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.CreatePolicyTests#test_Premium_Label_And_NumericInput</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.CreatePolicyTests#test_Premium_NumericOnlyAcceptance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.CreatePolicyTests#test_Premium_Placeholder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.CreatePolicyTests#test_Reset_Returns_Defaults</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.CreatePolicyTests#test_ReviewDialog_DisplaysSelectedValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
